@@ -18,8 +18,6 @@ RUN \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
-EXPOSE 2222
-
 RUN rm -f /etc/ssh/ssh_known_hosts ; \
     mkdir -vp /root/.ssh/ ; \
     chmod go-rwx /root/.ssh/
